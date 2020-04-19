@@ -1,0 +1,29 @@
+html, body, #root
+{
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+}
+.maincontainer
+{
+  height: 100%;
+  width: 100%;
+  padding: 30px 60px;
+  background-color: white;
+}
+.canvas
+{
+  display: grid;
+  grid-template-columns:repeat(25, 10px [col-start]);
+  grid-template-rows:repeat( 100 , 10px [row-start]);
+  grid-gap :0px
+}
+.pixel
+{
+  height:10px;
+  width:10px;
+  border:1px solid rgba(0,0,0,0.1);
+  display:inline-block;;
+}
